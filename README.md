@@ -18,8 +18,7 @@ The dashboard was built using the following tools and technologies:
 📝 Data Modeling – Established a relational schema to enable seamless cross-filtering between product categories, time dimensions, and geographic regions.
 
 📂 File Formats – .pbix for dashboard architecture and .sql for backend data transformations.
-                  ![Overview page](https://github.com/user-attachments/assets/afb934dc-ba09-4cd6-80a5-72ec10550819)
-
+                  
 4. Data Source
 Source: AdventureWorks Database & Apex Velo Sales Records.
 The data consists of thousands of rows of transactional records covering a diverse product catalog of bikes, accessories, and clothing. It includes detailed dimensions for geographic regions (North America, Europe, Pacific), product sub-categories, and historical sales timestamps.
