@@ -55,3 +55,6 @@ Margin Protection: Identifies a 14.88% drop in average price, prompting a review
 Inventory Optimization: Highlights that Black and Red variants dominate nearly 40% of the market.
 
 Strategic Upselling: Reveals a massive opportunity to improve "attachment rates" for accessories among the high-value bike-buying demographic.
+
+6.Screenshots / Demos from the dashboard 
+![Overview page](https://github.com/user-attachments/assets/d98756b4-901b-4785-a5d9-d8dbb8a93afb)
