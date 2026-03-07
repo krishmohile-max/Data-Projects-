@@ -4,6 +4,8 @@
 
 This project analyzes the sales performance of Apex Velo & Co., a bicycle manufacturing and retail company. The goal is to evaluate revenue trends, product performance, regional sales distribution, and operational efficiency to identify key growth drivers and business risks.
 
+#### Data source- Adventureworks Dataset
+
 ## II.Business Objective
 
 To assess overall company performance and uncover insights that can help improve revenue growth, product strategy, and market expansion.
