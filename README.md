@@ -1,60 +1,70 @@
 # Data-Projects-
-1. Project Title / Headline
-Apex Velo & Co: Performance Intelligence & Sales Operations Dashboard
-A sophisticated business intelligence tool engineered to synthesize global sales data, providing a dual-layered perspective from high-level commercial trends to granular transactional auditing.
+Apex Velo & Co. Sales Performance Analysis
+Project Overview
 
-2. Short Description / Purpose
-The Apex Velo & Co Dashboard is a professional Power BI reporting solution designed to monitor and analyze the performance of a global cycling enterprise. It serves to bridge the gap between volume-driven growth and margin sustainability, providing commerce and finance stakeholders with the visibility needed to optimize pricing strategies and regional inventory allocation.
+This project analyzes the sales performance of Apex Velo & Co., a bicycle manufacturing and retail company. The goal is to evaluate revenue trends, product performance, regional sales distribution, and operational efficiency to identify key growth drivers and business risks.
 
-3. Tech Stack
-The dashboard was built using the following tools and technologies:
+Business Objective
 
-📊 Power BI Desktop – Used as the primary visualization engine to create an interactive two-page analytical report.
+To assess overall company performance and uncover insights that can help improve revenue growth, product strategy, and market expansion.
 
-🗄️ MySQL / SQL – Utilized for the foundational data engineering layer, including complex joins and data cleaning of the AdventureWorks-derived datasets.
+Tools & Technologies
 
-🧠 DAX (Data Analysis Expressions) – Implemented to create dynamic KPIs such as Total Sales, Average Price, and Volume variances.
+SQL – Data exploration and business analysis
 
-📝 Data Modeling – Established a relational schema to enable seamless cross-filtering between product categories, time dimensions, and geographic regions.
+Power BI – Interactive dashboard visualization
 
-📂 File Formats – .pbix for dashboard architecture and .sql for backend data transformations.
-                  
-4. Data Source
-Source: AdventureWorks Database & Apex Velo Sales Records.
-The data consists of thousands of rows of transactional records covering a diverse product catalog of bikes, accessories, and clothing. It includes detailed dimensions for geographic regions (North America, Europe, Pacific), product sub-categories, and historical sales timestamps.
+Excel Dataset – Source data
 
-5. Features / Highlights
-Business Problem
-In a competitive commerce environment, maintaining profitability while scaling volume is a significant challenge. Analysts often struggle to identify whether revenue growth is organic or driven by margin-eroding discounts, especially when dealing with high-ticket items like premium mountain bikes.
+Key Areas of Analysis
 
-Goal of the Dashboard
-To deliver a strategic tool that:
+Revenue Performance
+Examines overall sales growth, pricing trends, and revenue contribution across different products and regions.
 
-Monitors the relationship between sales volume and average unit price.
+Product Performance
+Identifies best-selling products and evaluates category-level revenue contribution.
 
-Identifies regional revenue strongholds and underperforming product categories.
+Customer Insights
+Analyzes high-value customers and purchasing patterns to understand revenue concentration.
 
-Provides a drill-down "Details" view for auditing high-value transactions.
+Regional Sales Analysis
+Evaluates sales distribution across territories to identify strong and underperforming markets.
 
-Walkthrough of Key Visuals
+Operational Efficiency
+Assesses employee and store performance in generating sales.
 
-Executive KPIs (Top Header): Real-time tracking of Total Sales ($69.22M), Avg Price ($654.52), and Products Sold (50K), featuring color-coded variance indicators.
+Profitability Analysis
+Compares product margins to identify the most profitable product lines.
 
-Geographic Distribution (Map): Visualizes global sales concentration, highlighting the Northwest and Southwest regions as primary revenue drivers.
+Key Insights
 
-Sales vs. Max Point (Line Chart): Tracks temporal volatility, identifying massive revenue spikes (e.g., $8.1M) and seasonal lulls.
+Sales increased 14.23% year-over-year, driven primarily by higher order volume.
 
-Category Mix (Pie Charts): Illustrates that Bikes drive 85.94% of revenue, while Accessories and Clothing dominate transaction volume.
+Average selling price declined by ~14.88%, suggesting pricing pressure or discounts.
 
-Transactional Audit (Details Page): A granular table allowing users to track specific ProductIDs and high-value single sales exceeding $80,000.
+Revenue is heavily concentrated in the Bikes category, creating dependency risk.
 
-Business Impact & Insights
+Sales show strong seasonal patterns, with peaks during specific months.
 
-Margin Protection: Identifies a 14.88% drop in average price, prompting a review of discounting strategies.
+Revenue distribution is skewed toward a few territories, indicating expansion opportunities.
 
-Inventory Optimization: Highlights that Black and Red variants dominate nearly 40% of the market.
+Business Recommendations
 
-Strategic Upselling: Reveals a massive opportunity to improve "attachment rates" for accessories among the high-value bike-buying demographic.
+Diversify revenue by strengthening non-bike product categories.
 
-6.Screenshots / Demos from the dashboard 
+Improve pricing strategy to protect profit margins.
+
+Expand marketing efforts in underperforming regions.
+
+Prepare inventory and staffing plans for seasonal demand spikes.
+
+Project Deliverables
+
+SQL Analysis Scripts – Data exploration and business queries
+
+Power BI Dashboard – Interactive visualization of sales performance
+
+Project Documentation – Detailed explanation of analysis and insights
+
+A Demo of Dashboard Deliverables
 ![Overview page](https://github.com/user-attachments/assets/d98756b4-901b-4785-a5d9-d8dbb8a93afb)
