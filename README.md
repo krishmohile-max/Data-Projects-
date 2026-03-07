@@ -1,14 +1,14 @@
 # Data-Projects-
-I.Apex Velo & Co. Sales Performance Analysis
-Project Overview
+## I.Apex Velo & Co. Sales Performance Analysis
+###Project Overview
 
 This project analyzes the sales performance of Apex Velo & Co., a bicycle manufacturing and retail company. The goal is to evaluate revenue trends, product performance, regional sales distribution, and operational efficiency to identify key growth drivers and business risks.
 
-II.Business Objective
+## II.Business Objective
 
 To assess overall company performance and uncover insights that can help improve revenue growth, product strategy, and market expansion.
 
-III.Tools & Technologies
+## III.Tools & Technologies
 
 1.SQL – Data exploration and business analysis
 
@@ -16,7 +16,7 @@ III.Tools & Technologies
 
 3.Excel Dataset – Source data
 
-IV.Key Areas of Analysis
+## IV.Key Areas of Analysis
 
 1.Revenue Performance
 Examines overall sales growth, pricing trends, and revenue contribution across different products and regions.
@@ -36,7 +36,7 @@ Assesses employee and store performance in generating sales.
 6.Profitability Analysis
 Compares product margins to identify the most profitable product lines.
 
-V.Key Insights
+## V.Key Insights
 
 1.Sales increased 14.23% year-over-year, driven primarily by higher order volume.
 
@@ -48,7 +48,7 @@ V.Key Insights
 
 5.Revenue distribution is skewed toward a few territories, indicating expansion opportunities.
 
-VI Business Recommendations
+## VI Business Recommendations
 
 1.Diversify revenue by strengthening non-bike product categories.
 
@@ -58,7 +58,7 @@ VI Business Recommendations
 
 4.Prepare inventory and staffing plans for seasonal demand spikes.
 
-VII Project Deliverables
+## VII Project Deliverables
 
 1.SQL Analysis Scripts – Data exploration and business queries
 
@@ -66,5 +66,5 @@ VII Project Deliverables
 
 3.Project Documentation – Detailed explanation of analysis and insights
 
-VIII A Demo of Dashboard Deliverables
+## VIII A Demo of Dashboard Deliverables
 ![Overview page](https://github.com/user-attachments/assets/d98756b4-901b-4785-a5d9-d8dbb8a93afb)
