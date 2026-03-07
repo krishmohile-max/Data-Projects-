@@ -1,6 +1,6 @@
 # Data-Projects-
 ## I.Apex Velo & Co. Sales Performance Analysis
-###Project Overview
+### Project Overview
 
 This project analyzes the sales performance of Apex Velo & Co., a bicycle manufacturing and retail company. The goal is to evaluate revenue trends, product performance, regional sales distribution, and operational efficiency to identify key growth drivers and business risks.
 
