@@ -16,7 +16,7 @@ To assess overall company performance and uncover insights that can help improve
 
 2.Power BI – Interactive dashboard visualization
 
-3.Excel Dataset – Source data
+3.Excel - Discount Analysis
 
 ## IV.Key Areas of Analysis
 
@@ -38,6 +38,9 @@ Assesses employee and store performance in generating sales.
 6.Profitability Analysis
 Compares product margins to identify the most profitable product lines.
 
+7.Discount Analysis
+Asseses to what degree are discounts driving sales and their impact on overall revenue.
+
 ## V.Key Insights
 
 1.Sales increased 14.23% year-over-year, driven primarily by higher order volume.
@@ -50,6 +53,8 @@ Compares product margins to identify the most profitable product lines.
 
 5.Revenue distribution is skewed toward a few territories, indicating expansion opportunities.
 
+6.Lower discount bucket like 2% to 5% put little to no imact on sales.
+
 ## VI Business Recommendations
 
 1.Diversify revenue by strengthening non-bike product categories.
@@ -60,11 +65,15 @@ Compares product margins to identify the most profitable product lines.
 
 4.Prepare inventory and staffing plans for seasonal demand spikes.
 
+5.Discounts below 10% i.e "Micro discounts" should be phased out.
+
 ## VII Project Deliverables
 
 1.SQL Analysis Scripts – Data exploration and business queries
 
 2.Power BI Dashboard – Interactive visualization of sales performance
+
+4.Excel - Impact of discounts on sales and overall revenue of company
 
 3.Project Documentation – Detailed explanation of analysis and insights
 
