@@ -53,7 +53,7 @@ Asseses to what degree are discounts driving sales and their impact on overall r
 
 5.Revenue distribution is skewed toward a few territories, indicating expansion opportunities.
 
-6.Lower discount bucket like 2% to 5% put little to no imact on sales.
+6.Lower discount bucket like 2% to 5% put little to no impact on sales.
 
 ## VI Business Recommendations
 
