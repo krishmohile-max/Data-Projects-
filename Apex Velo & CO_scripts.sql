@@ -349,3 +349,34 @@ Else "NO contribution"
 End as Impact_on_Business 
 from Discount_impact
 order by profit desc;
+
+-- Company level Impact 
+with Discountbuckets as (
+select orderqty as orders,linetotal,pc.name as category,ps.name as subcategory,
+case when unitpricediscount = 0 then "No Discount"
+when unitpricediscount between 0.01 and 0.05 then "Low discount (Revenue leak)"
+when unitpricediscount between 0.06 and 0.15 then "Moderate"
+when unitpricediscount between 0.16 and 0.35 then "High"
+when unitpricediscount > 0.35 then "Very High"
+End as Discount_strategy,
+(orderqty*unitprice - linetotal) as Cost_of_Discount,
+(linetotal - orderqty*poh.standardcost) as Net_Profit
+from salesorderdetail sod
+join product p 
+on p.ProductID = sod.ProductID
+join productcosthistory poh
+on poh.ProductID = p.ProductID
+join productsubcategory ps
+on ps.ProductSubcategoryID = p.ProductSubcategoryID
+join productcategory pc 
+on pc.ProductCategoryID = ps.ProductCategoryID
+)
+select discount_strategy,category,subcategory,
+count(*) as Number_of_orders ,sum(orders) as Total_orders,
+ROUND(SUM(linetotal), 0) AS Total_Revenue,
+round(sum(cost_of_discount),2) as Total_discounts,
+    ROUND(SUM(Net_Profit), 0) AS Total_Profit,
+    ROUND(SUM(Net_Profit) / NULLIF(SUM(cost_of_discount), 0), 2) AS Strategy_Efficiency
+FROM DiscountBuckets
+GROUP BY Discount_Strategy,category,subcategory
+ORDER BY Strategy_Efficiency DESC;
