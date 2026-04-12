@@ -320,4 +320,5 @@ group by p.name )
  on c.CustomerID = soh.CustomerID
  where soh.SalesOrderID is null ;
  
- 
+ -- Discount Impact Analysis
+
