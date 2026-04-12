@@ -312,4 +312,32 @@ group by p.name )
  on c.CustomerID = soh.CustomerID
  where soh.SalesOrderID is null ;
  
- 
+-- Discount Impact Analysis 
+with Discount_impact as (
+select p.name as productname,pc.name as category,ps.name as subcategory ,
+case when unitpricediscount = 0 then "No Cost Borne"
+when unitpricediscount between 0.02 and 0.05 then "Low Cost Borne"
+when unitpricediscount between 0.06 and 0.15 then "High Cost Borne"
+when unitpricediscount > 0.35 then "Very High Cost Borne"
+End as Discount_Buckets,
+sum(orderqty*unitprice) as Potential_revenue,
+sum(linetotal) as Actual_Revenue,
+sum(Orderqty*standardcost) as total_cost,
+round(sum(orderqty*unitprice) - sum(linetotal)),2 as Discount_cost
+from salesorderdetail sod 
+join product p
+on p.ProductID = sod.ProductID
+join productsubcategory ps 
+on ps.ProductSubcategoryID = p.ProductSubcategoryID
+join productcategory pc 
+on pc.ProductCategoryID = ps.ProductCategoryID
+group by p.name,pc.name,ps.name,unitpricediscount
+)
+select productname,category,subcategory,round((Actual_Revenue - total_cost)) as Profit,
+round((Actual_Revenue - total_cost) / (round(Discount_cost,2)) ,2) as performance,
+case when round((Actual_Revenue - total_cost) / (round(Discount_cost,2)) ,2) > 0 then "Adding to profits"
+when round((Actual_Revenue - total_cost) / (round(Discount_cost,2)) ,2) < 0 then "Eating Profits"
+Else "NO contribution"
+End as Impact_on_Business 
+from Discount_impact
+order by profit desc;
