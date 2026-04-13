@@ -75,7 +75,7 @@ Asseses to what degree are discounts driving sales and their impact on overall r
 
 4.Excel - Impact of discounts on sales and overall revenue of company
 
-3.Project Documentation – Detailed explanation of analysis and insights and recommendations 
+3.Project Documentation – Detailed explanation of analysis, insights and recommendations 
 
 ## VIII A Demo of Dashboard Deliverables
 ![Overview page](https://github.com/user-attachments/assets/d98756b4-901b-4785-a5d9-d8dbb8a93afb)
