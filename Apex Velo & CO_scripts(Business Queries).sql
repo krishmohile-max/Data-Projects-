@@ -40,7 +40,7 @@ round(avg(average_revenue) over(),2) as Abs_average,
 case when round(Average_revenue,2) >= round(avg(average_revenue) over(),2) then 'Above Average'
 when round(Average_revenue,2) < round(avg(average_revenue) over(),2) then 'Below Average'
 Else 'Average'
-end as Analsysis
+end as Analysis
 from averages;
 
 
